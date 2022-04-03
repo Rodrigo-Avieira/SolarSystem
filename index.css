@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    display: flexbox;
+}
+body{
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-29_9e72b83c.png?download=true);
+    font-family: Lato;
+}
+h1{
+    font-size: 150px;
+    font-family:Lato;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin: 25px;
+    animation: letreiro 4s ease-in 0s infinite alternate;
+}
+@keyframes letreiro {
+    0%{transform: scale(1);}
+    50%{transform: scale(0.5);}
+    100%{transform: scale(1);}
+}
+hr{
+    height: 4px;
+    background-color: rgb(240, 181, 32);
+    animation: animalinha 4s ease-out 3s infinite normal both;
+}
+@keyframes animalinha {
+    0%{background-color: rgb(240, 181, 32); 
+        transform: scale(1);}
+    25%{background-color: rgb(240, 115, 32);}
+    50%{background-color: rgb(240, 63, 32);
+        transform: scale(0.2);}
+    75%{background-color: rgb(240, 32, 32);}
+    100%{background-color: rgb(240, 115, 32);
+        transform: scale(1);}
+}
+.explain{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+}
+.origem{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
+}
+.cards{
+    margin: 10px 40px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_sol{
+    height: 400px;
+    padding: 20px;
+    margin: 30px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    backdrop-filter: url(filters.svg#filter) blur(5px) saturate(150%);  
+}
+.card_sol:hover{
+    border: 3px solid rgb(250, 6, 6);
+}
+.card_sol>img{
+    width: 300px;
+    border-radius: 50%; 
+}
+.card_sol>h3{
+    margin-top: 15px;
+    text-align: center;
+}
+.card_sol>p{
+    width: 250px;
+    text-align:justify;
+    margin: 10px auto;
+}
+.card_mercurio{
+    height: 400px;
+    padding: 20px 45px;
+    margin: 30px 60px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    backdrop-filter: url(filters.svg#filter) blur(5px) saturate(150%);
+}
+.card_mercurio:hover{
+    border: 3px solid rgb(98, 91, 138);
+}
+.card_mercurio>img{
+    width: 150px;
+    border-radius: 50%; 
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.card_mercurio>h3{
+    margin-top: 25px;
+    text-align: center;
+}
+.card_mercurio>p{
+    width: 250px;
+    text-align:justify;
+    margin: 10px auto;
+}
+.card_venus{
+    height: 400px;
+    padding: 20px 45px;
+    margin: 30px 28px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    backdrop-filter: url(filters.svg#filter) blur(5px) saturate(150%);
+}
+.card_venus:hover{
+    border: 3px solid rgb(189, 139, 2);
+}
+.card_venus>img{
+    width: 200px;
+    border-radius: 50%; 
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.card_venus>h3{
+    margin-top: 25px;
+    text-align: center;
+}
+.card_venus>p{
+    width: 250px;
+    text-align:justify;
+    margin: 10px auto;
+}
+.card_terra{
+    height: 400px;
+    padding: 20px 30px;
+    margin: 30px 33px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    backdrop-filter: url(filters.svg#filter) blur(5px) saturate(150%);
+}
+.card_terra:hover{
+    border: 3px solid rgb(2, 30, 189);
+}
+.card_terra>img{
+    width: 250px;
+    border-radius: 50%; 
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.card_terra>h3{
+    margin-top: 25px;
+    text-align: center;
+}
+.card_terra>p{
+    width: 250px;
+    text-align:justify;
+    margin: 10px auto;
+}
+.card_marte{
+    height: 400px;
+    padding: 20px 45px;
+    margin: 30px 55px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    backdrop-filter: url(filters.svg#filter) blur(5px) saturate(150%);
+}
+.card_marte:hover{
+    border: 3px solid #d6924b;
+}
+.card_marte>img{
+    width: 170px;
+    border-radius: 50%; 
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.card_marte>h3{
+    margin-top: 25px;
+    text-align: center;
+}
+.card_marte>p{
+    width: 250px;
+    text-align:justify;
+    margin: 10px auto;
+}
+.card_jupiter{
+    height: 400px;
+    padding: 20px 45px;
+    margin: 30px 30px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    backdrop-filter: url(filters.svg#filter) blur(5px) saturate(150%);
+    flex-wrap: wrap;
+}
+.card_jupiter:hover{
+    border: 3px solid #814f15;
+}
+.card_jupiter>img{
+    width: 170px;
+    border-radius: 50%; 
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.card_jupiter>h3{
+    margin-top: 25px;
+    text-align: center;
+}
+.card_jupiter>p{
+    width: 250px;
+    text-align:justify;
+    margin: 10px auto;
+}
+.card_saturno{
+    height: 400px;
+    padding: 20px 15px;
+    margin: 30px 30px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    backdrop-filter: url(filters.svg#filter) blur(5px) saturate(150%);
+}
+.card_saturno:hover{
+    border: 3px solid #413f44;
+}
+.card_saturno>img{
+    width: 300px;
+    border-radius: 50%; 
+    margin-top: 45px;
+    margin-left: 10px;
+}
+.card_saturno>h3{
+    margin-top: 25px;
+    text-align: center;
+}
+.card_saturno>p{
+    width: 250px;
+    text-align:justify;
+    margin: 10px auto;
+}
+.card_urano{
+    height: 400px;
+    padding: 20px 45px;
+    margin: 30px 60px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    backdrop-filter: url(filters.svg#filter) blur(5px) saturate(150%);
+}
+.card_urano:hover{
+    border: 3px solid #4270fa;
+}
+.card_urano>img{
+    width: 150px;
+    border-radius: 50%; 
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.card_urano>h3{
+    margin-top: 25px;
+    text-align: center;
+}
+.card_urano>p{
+    width: 250px;
+    text-align:justify;
+    margin: 10px auto;
+}
+.card_netuno{
+    height: 400px;
+    padding: 20px 45px;
+    margin: 30px 28px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    backdrop-filter: url(filters.svg#filter) blur(5px) saturate(150%);
+}
+.card_netuno:hover{
+    border: 3px solid #375f56;
+}
+.card_netuno>img{
+    width: 150px;
+    border-radius: 50%; 
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.card_netuno>h3{
+    margin-top: 25px;
+    text-align: center;
+}
+.card_netuno>p{
+    width: 250px;
+    text-align:justify;
+    margin: 10px auto;
+}
